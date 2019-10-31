@@ -1,6 +1,8 @@
-package com.suika.astree
+package com.suika.sample
 
 import android.app.Application
+import com.suika.astree.AndroidStudioTree
+import com.suika.astree.BuildConfig
 
 import timber.log.Timber
 

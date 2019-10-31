@@ -1,4 +1,4 @@
-package com.suika.astree
+package com.suika.sample
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
