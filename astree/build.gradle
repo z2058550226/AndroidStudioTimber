@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: "guru.stefma.bintrayrelease"
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -26,4 +26,15 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.jakewharton.timber:timber:4.7.1'
+}
+
+version = "1.0.0"
+group = "com.suika"
+androidArtifact {
+    artifactId = "AndroidStudioTree"
+}
+publish {
+    userOrg = 'suika'
+    desc = 'An Timber log tree, support log to code navigation'
+    website = 'https://github.com/z2058550226/AndroidStudioTimber'
 }
