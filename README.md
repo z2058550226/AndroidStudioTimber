@@ -8,12 +8,12 @@ This library has only one class named `AndroidStudioTree`. It add a useful featu
 In Application, you can simply replace the `DebugTree` with `AndroidStudioTree` like this:
 
 ```kotlin
-class App : Application() {
+class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         ...
-        if (Config.DEBUG) {
-            Timber.plant(SuikaTree()) // orignal is Timber.plant(Timber.DebugTree())
+        if (BuildConfig.DEBUG) {
+            Timber.plant(AndroidStudioTree()) // orignal is Timber.plant(Timber.DebugTree())
         }
         ...
     }
