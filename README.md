@@ -21,3 +21,8 @@ class MyApplication : Application() {
 ```
 
 Then you can use Timber with IDE navigation.
+
+For gradle dependency:
+```groovy
+compile 'com.suika:AndroidStudioTree:1.0.0'
+```
