@@ -1,6 +1,7 @@
 package com.suika.sample
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import timber.log.Timber
 
@@ -8,7 +9,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(TextView(this).apply {
+            text = "hello world"
+        })
+
         test {
             Timber.i("inline lambda")
             test2()

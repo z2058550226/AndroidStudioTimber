@@ -26,5 +26,5 @@ Then you can use Timber with IDE navigation.
 
 For gradle dependency:
 ```groovy
-implementation 'com.suika:AndroidStudioTree:1.0.0'
+implementation 'io.github.z2058550226:astree:1.0.1'
 ```
